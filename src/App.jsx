@@ -1,12 +1,15 @@
 import React from "react";
-import BlogHeader from "./component/BlogHeader";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from './Layout/Layout'
 function App() {
   return (
-    <div>
-      <BlogHeader />
-      {/* Other components or blog content */}
-    </div>
+    <Router className="bg">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+        
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
